@@ -73,3 +73,19 @@ Je remarque déjà que le type d’apprentissage le plus utilisé est l’appren
 https://www.kaggle.com/datasets/thedevastator/formula-one-racing-a-comprehensive-data-analysis
 
 Analyser et prédire le nombre de point d´un pilote à la fin d´une saison -> Régression linéaire multiple.
+
+Ce dataset contient des informations sur l'ensemble des courses de Formule 1 depuis l'année 1950. Il y a plusieurs fichiers des datas sur les pilotes, les tracées des courses, sur les écuries, et l'emble des résultats pour les qualifications, course sprint et (vrai) course. 
+Le fichier le plus important est result.csv car il contient les résultats de chaque course avec le score de chaque pilote et le lieux. 
+L'objectif est de trouvé un modèle qui permet de prédire le nombre de point d´un pilote à la fin d´une saison. Pour cela, nous devons trouver les variables qui ont le plus d'impact sur le nombre de point d´un pilote.
+Il s'agit d'un apprentissage supervisé car nous avons un jeu de données d'entraînement et un jeu de données à tester. Nous devons prédire un nombre de point d´un pilote à la fin d´une saison. Je pense qu'il faut utiliser une régression linéaire parce que nous devons déterminer une valeur numérique.
+
+#### Partie 1 : Algorithmes de régression linéaire simple
+J'ai commencé par analyser mes données et sélectionner celle qui me semble importante pour commencer.
+En premier lieux j'ai commencé par une régression linéaire simple pour prendre en main les différentes bibliothèques.
+J'ai pris comme paramètre le nombre de points d'un pilote par rapport à ses différentes courses.
+Les résultats ne sont pas très concluant car le modèle n'est pas très précis. Le nombre de points gagné par un pilote sur une course ne dépend pas uniquement du tracé d'un circuit.
+
+#### Partie 2 : Algorithmes de régression linéaire multiple
+Il s'agit d'un problème de régression linéaire multiple car nous avons plusieurs variables qui ont un impact sur le nombre de point d´un pilote.
+
+
