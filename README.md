@@ -1,5 +1,8 @@
 # F1_Machine_Learning
 
+## Planification
+![alt text](https://github.com/benjamin-milhet/F1_Machine_Learning/blob/main/image.png?raw=true)
+
 ## Préparation
 
 ### What is the difference between supervised and unsupervised learning ?
