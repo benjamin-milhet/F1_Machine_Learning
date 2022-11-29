@@ -88,6 +88,8 @@ J'ai pris comme paramètre le nombre de points d'un pilote par rapport à ses di
 Les résultats ne sont pas très concluant car le modèle n'est pas très précis. Le nombre de points gagné par un pilote sur une course ne dépend pas uniquement du tracé d'un circuit.
 
 #### Partie 2 : Algorithmes de régression linéaire multiple
-Il s'agit d'un problème de régression linéaire multiple car nous avons plusieurs variables qui ont un impact sur le nombre de point d'un pilote. 
+Un problème de régression linéaire multiple serait déja plus intéressant car nous avons plusieurs variables qui ont un impact sur le nombre de point d'un pilote. 
 Les différentes variables qui me semble importante sont le circuit, l'écurie a laquelle appartient le pilote et durant quelle année, sa position sur la grille de départ et ses différents temps de courses et leurs évolutions.
+
+#### Partie 3 : Chercher d'autre algorithme de regression
 
