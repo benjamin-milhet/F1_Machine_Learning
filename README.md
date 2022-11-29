@@ -74,6 +74,8 @@ https://www.kaggle.com/datasets/thedevastator/formula-one-racing-a-comprehensive
 
 Analyser et prédire le nombre de point d´un pilote à la fin d´une saison -> Régression linéaire multiple.
 
+Pour commencer, nous essayerons déja de déterminer le nombre de point que peut gagner un pilote pour un grand prix choisit.
+
 Ce dataset contient des informations sur l'ensemble des courses de Formule 1 depuis l'année 1950. Il y a plusieurs fichiers des datas sur les pilotes, les tracées des courses, sur les écuries, et l'emble des résultats pour les qualifications, course sprint et (vrai) course. 
 Le fichier le plus important est result.csv car il contient les résultats de chaque course avec le score de chaque pilote et le lieux. 
 L'objectif est de trouvé un modèle qui permet de prédire le nombre de point d´un pilote à la fin d'une saison. Pour cela, nous devons trouver les variables qui ont le plus d'impact sur le nombre de point d´un pilote.
@@ -86,6 +88,6 @@ J'ai pris comme paramètre le nombre de points d'un pilote par rapport à ses di
 Les résultats ne sont pas très concluant car le modèle n'est pas très précis. Le nombre de points gagné par un pilote sur une course ne dépend pas uniquement du tracé d'un circuit.
 
 #### Partie 2 : Algorithmes de régression linéaire multiple
-Il s'agit d'un problème de régression linéaire multiple car nous avons plusieurs variables qui ont un impact sur le nombre de point d´un pilote.
-
+Il s'agit d'un problème de régression linéaire multiple car nous avons plusieurs variables qui ont un impact sur le nombre de point d'un pilote. 
+Les différentes variables qui me semble importante sont le circuit, l'écurie a laquelle appartient le pilote et durant quelle année, sa position sur la grille de départ et ses différents temps de courses et leurs évolutions.
 
