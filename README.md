@@ -1,7 +1,7 @@
 # F1_Machine_Learning
 
 ## Planification
-![alt text](https://github.com/benjamin-milhet/F1_Machine_Learning/blob/main/Capture.png?raw=true)
+![alt text](https://github.com/benjamin-milhet/F1_Machine_Learning/blob/main/Capture.PNG?raw=true)
 
 ## Préparation
 
