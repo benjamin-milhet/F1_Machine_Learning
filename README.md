@@ -76,8 +76,8 @@ Analyser et prédire le nombre de point d´un pilote à la fin d´une saison -> 
 
 Ce dataset contient des informations sur l'ensemble des courses de Formule 1 depuis l'année 1950. Il y a plusieurs fichiers des datas sur les pilotes, les tracées des courses, sur les écuries, et l'emble des résultats pour les qualifications, course sprint et (vrai) course. 
 Le fichier le plus important est result.csv car il contient les résultats de chaque course avec le score de chaque pilote et le lieux. 
-L'objectif est de trouvé un modèle qui permet de prédire le nombre de point d´un pilote à la fin d´une saison. Pour cela, nous devons trouver les variables qui ont le plus d'impact sur le nombre de point d´un pilote.
-Il s'agit d'un apprentissage supervisé car nous avons un jeu de données d'entraînement et un jeu de données à tester. Nous devons prédire un nombre de point d´un pilote à la fin d´une saison. Je pense qu'il faut utiliser une régression linéaire parce que nous devons déterminer une valeur numérique.
+L'objectif est de trouvé un modèle qui permet de prédire le nombre de point d´un pilote à la fin d'une saison. Pour cela, nous devons trouver les variables qui ont le plus d'impact sur le nombre de point d´un pilote.
+Il s'agit d'un apprentissage supervisé car nous avons un jeu de données d'entraînement et un jeu de données à tester. Nous devons prédire un nombre de point d'un pilote à la fin d´une saison. Je pense qu'il faut utiliser une régression linéaire parce que nous devons déterminer une valeur numérique.
 
 #### Partie 1 : Algorithmes de régression linéaire simple
 J'ai commencé par analyser mes données et sélectionner celle qui me semble importante pour commencer.
