@@ -2,6 +2,7 @@
 
 ## Planification
 ![alt text](https://github.com/benjamin-milhet/F1_Machine_Learning/blob/main/Capture.PNG?raw=true)
+https://trello.com/b/Ydjs2wPd/projet-4a-formula-1-dataset
 
 ## Préparation
 
