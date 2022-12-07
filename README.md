@@ -84,6 +84,8 @@ Le fichier le plus important est result.csv car il contient les résultats de ch
 L'objectif est de trouvé un modèle qui permet de prédire le nombre de point d´un pilote à la fin d'une saison. Pour cela, nous devons trouver les variables qui ont le plus d'impact sur le nombre de point d´un pilote.
 Il s'agit d'un apprentissage supervisé car nous avons un jeu de données d'entraînement et un jeu de données à tester. Nous devons prédire un nombre de point d'un pilote à la fin d´une saison. Je pense qu'il faut utiliser une régression linéaire parce que nous devons déterminer une valeur numérique.
 
+https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
+
 #### Partie 1 : Algorithmes de régression linéaire simple
 J'ai commencé par analyser mes données et sélectionner celle qui me semble importante pour commencer.
 En premier lieux j'ai commencé par une régression linéaire simple pour prendre en main les différentes bibliothèques.
