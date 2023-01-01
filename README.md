@@ -97,4 +97,4 @@ Un problème de régression linéaire multiple serait déja plus intéressant ca
 Les différentes variables qui me semble importante sont le circuit, l'écurie a laquelle appartient le pilote et durant quelle année, sa position sur la grille de départ et ses différents temps de courses et leurs évolutions.
 
 #### Partie 3 : Chercher d'autre algorithme de regression
-J'avais entendu parler de la régression linéaire logistique, cepandant, après des premièes recherches, elle ne semble pas correspondre à mon problème. En effet, celle ci est principalement utilisé pour une classification binaire. Notre problème est de déterminer le nombre de points gagner et cela n'est pas un choix entre deux solutions prédéfinis.
+J'avais entendu parler de la régression linéaire logistique, cepandant, après des premières recherches, elle ne semble pas correspondre à mon problème. En effet, celle ci est principalement utilisé pour une classification binaire. Notre problème est de déterminer le nombre de points gagner et cela n'est pas un choix entre deux solutions prédéfinis.
