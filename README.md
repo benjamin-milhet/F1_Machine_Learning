@@ -99,4 +99,6 @@ Les différentes variables qui me semble importante sont le circuit, l'écurie a
 #### Partie 3 : Chercher d'autre algorithme de regression
 J'avais entendu parler de la régression linéaire logistique, cepandant, après des premières recherches, elle ne semble pas correspondre à mon problème. En effet, celle ci est principalement utilisé pour une classification binaire. Notre problème est de déterminer le nombre de points gagner et cela n'est pas un choix entre deux solutions prédéfinis.
 
-#### https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
+#### 
+![https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html](https://github.com/benjamin-milhet/F1_Machine_Learning/blob/main/cheat-sheet.png?raw=true)
+
