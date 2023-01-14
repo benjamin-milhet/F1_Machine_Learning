@@ -73,6 +73,10 @@ Je remarque déjà que le type d’apprentissage le plus utilisé est l’appren
 
 ## Choix du sujet
 
+### Pourquoi ce domaine ?
+
+
+
 https://www.kaggle.com/datasets/thedevastator/formula-one-racing-a-comprehensive-data-analysis
 
 Analyser et prédire le nombre de point d´un pilote à la fin d´une saison -> Régression linéaire multiple.
