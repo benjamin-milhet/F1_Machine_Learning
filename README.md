@@ -73,9 +73,13 @@ Je remarque déjà que le type d’apprentissage le plus utilisé est l’appren
 
 ## Choix du sujet
 
+### Découverte de Kaggle
+
+Pour ce projet, je devais choisir suje, un domaine sur lequel je devais utiliser des algorithmes d'inteligences artificielles. Je me suis donc rendu sur le site Kaggle qui comprend des competitions et des dataset. Un dataset est un ensemble de données sur un sujet. Ce site comprend aussi des formations pour prendre en main python et ses bibliothèques pour le traitement des données comme Numpy ou Scikit-Learn. Avant de choisir un dataset pour ce projet, j'ai commencé par effectuer la formation "Python" et "Intro to Machine Learning" qui m'a permis de mieux comprendre l'utilisation de Scikit-Learn.
+
 ### Pourquoi ce domaine ?
 
-
+Une fois une petite vase acquise, je me suis rendu sur la catégorie dataset de Kaggle pour voir l'ensemble des datasets disponibles.
 
 https://www.kaggle.com/datasets/thedevastator/formula-one-racing-a-comprehensive-data-analysis
 
