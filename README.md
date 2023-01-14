@@ -111,13 +111,17 @@ Le fichier Lap_times.csv contient le temps et la position de chaque tours de cha
 #### Fichier Pit_stops.csv
 Le fichier Pit_stops.csv contient tous les arrêts au stand avec à quelle moment de la course un pilote effectue cet arret, à quelle tour et la durée de l'arrêt au stand. Durant un Grand-prix, chaque pilote doit au moins effectuer un arrêt au stand pour mettre un autre type de pneux.
 
+#### Fichier Qualifying.csv
+Le fichier Qualifying.csv comprend la position du pilote après la séance de classification et ses 3 meilleurs temps des 3 séances de qualifications. Les qualifications se divisent en 3 parties appelée Q1, Q2 et Q3. Après la première seance de qualification Q1, seulement les 15 meilleurs pilotes accèdent à la Q2 et seulment les 10 meilleurs de la séance Q2 accèdent à la dernière seance de qualification Q3 qui déterminira le palcement finale sur la grille de départ.
+
+
+### Choix du type d'algorithme
 
 Ce dataset contient des informations sur l'ensemble des courses de Formule 1 depuis l'année 1950. Il y a plusieurs fichiers des datas sur les pilotes, les tracées des courses, sur les écuries, et l'emble des résultats pour les qualifications, course sprint et (vrai) course. 
 Le fichier le plus important est result.csv car il contient les résultats de chaque course avec le score de chaque pilote et le lieux. 
 L'objectif est de trouvé un modèle qui permet de prédire le nombre de point d´un pilote à la fin d'une saison. Pour cela, nous devons trouver les variables qui ont le plus d'impact sur le nombre de point d´un pilote.
 Il s'agit d'un apprentissage supervisé car nous avons un jeu de données d'entraînement et un jeu de données à tester. Nous devons prédire un nombre de point d'un pilote à la fin d´une saison. Je pense qu'il faut utiliser une régression linéaire parce que nous devons déterminer une valeur numérique.
 
-### Choix du type d'algorithme
 
 https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 
