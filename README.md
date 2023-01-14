@@ -127,6 +127,8 @@ https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
 
 ![https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html](https://github.com/benjamin-milhet/F1_Machine_Learning/blob/main/cheat-sheet.png?raw=true)
 
+Grâce à la cheat-sheet de scikit-learn, nous pouvons déterminer quelle algorithme utiliser pour tenter d'atteindre notre objectif de prédiction. Nous avons déja plus de 50 exemples et ne nous cherchons pas à prédire une catégorie. Ensuite nous voulons prédire une quantité et nous avons moins de 100 000 exemples, ce qui mène au dernier choix qui nous demande si peu de caractéristiques devraient être importante ou non. Nous cherchons donc a réaliser une régression et pour ce dernier choix, je vais faire des tests avec les différents algoritmes proposé pour chacun d'eux avec l'algorithme Lasso et la RidgeRegression. 
+
 #### Partie 1 : Algorithmes de régression linéaire simple
 J'ai commencé par analyser mes données et sélectionner celle qui me semble importante pour commencer.
 En premier lieux j'ai commencé par une régression linéaire simple pour prendre en main les différentes bibliothèques.
