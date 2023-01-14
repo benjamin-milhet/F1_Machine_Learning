@@ -79,7 +79,7 @@ Pour ce projet, je devais choisir suje, un domaine sur lequel je devais utiliser
 
 ### Pourquoi ce domaine ?
 
-Une fois une petite vase acquise, je me suis rendu sur la catégorie dataset de Kaggle pour voir l'ensemble des datasets disponibles.
+Une fois une petite base acquise, je me suis rendu sur la catégorie dataset de Kaggle pour voir l'ensemble des datasets disponibles. C'est en faisant mes recherches que je suis tombé sur un dataset contenant des données sur les différents championnats de Formule 1 depuis 1950. La formule 1 est un sport que je suis depuis plus de 10 ans grâce à mon père qui m'a transmis sa passion. Après avoir regarder son contenu et trouver un objectif avec celle-ci, j'ai fait valider mon sujet par Mme. Ansart, ma tutrice du projet, pour pouvoir continuer mon projet avec ce dataset.  
 
 https://www.kaggle.com/datasets/thedevastator/formula-one-racing-a-comprehensive-data-analysis
 
