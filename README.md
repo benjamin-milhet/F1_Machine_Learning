@@ -105,7 +105,12 @@ Le fichier Constructors.csv contient l'ensemble des écuries de Formule 1 qui on
 #### Fichier Drivers.csv
 Le fichier Drivers.csv comprend l'ensemble des pilotes qui ont au moins participés à un grand prix de F1. Ce dataset contient aussi le nom, le prénom et la date de naissance de chacun des pilotes.
 
-#### 
+#### Fichier Lap_times.csv
+Le fichier Lap_times.csv contient le temps et la position de chaque tours de chaque pilote pour chacun des Grand-prix qu'ils ont effectuées. Nous avons à notre disposition le temps en Minute/Seconde/Milliseconde et le temps en Milliseconde ainsi que sa position pour le tour 
+
+#### Fichier Pit_stops.csv
+Le fichier Pit_stops.csv contient tous les arrêts au stand avec à quelle moment de la course un pilote effectue cet arret, à quelle tour et la durée de l'arrêt au stand. Durant un Grand-prix, chaque pilote doit au moins effectuer un arrêt au stand pour mettre un autre type de pneux.
+
 
 Ce dataset contient des informations sur l'ensemble des courses de Formule 1 depuis l'année 1950. Il y a plusieurs fichiers des datas sur les pilotes, les tracées des courses, sur les écuries, et l'emble des résultats pour les qualifications, course sprint et (vrai) course. 
 Le fichier le plus important est result.csv car il contient les résultats de chaque course avec le score de chaque pilote et le lieux. 
