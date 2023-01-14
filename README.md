@@ -96,13 +96,16 @@ Pour commencer, nous essayerons déja de déterminer le nombre de point que peut
 
 ### Explication du contenu du dataset
 
-#### Fichier Circuit.csv
-Le fichier Circuit.csv contient l'ensemble des circuit de Formule 1 avec leurs noms, leurs pays et leurs positions géographiques.
+#### Fichier Circuits.csv
+Le fichier Circuits.csv contient l'ensemble des circuit de Formule 1 avec leurs noms, leurs pays et leurs positions géographiques.
 
-#### Fichier Constructor.csv
-Le fichier Constructor.csv contient l'ensemble des écuries de Formule 1 qui ont éxister. Ce fichier liste uniquement le nom des écuries et leurs nationalités. Une écurie de F1 est composé de deux pilotes principaux, de pilote réserviste et de nombreux ingénieurs pour concevoir la voiture et réaliser des stratégies pour les différentes courses.
+#### Fichier Constructors.csv
+Le fichier Constructors.csv contient l'ensemble des écuries de Formule 1 qui ont éxister. Ce fichier liste uniquement le nom des écuries et leurs nationalités. Une écurie de F1 est composé de deux pilotes principaux, de pilote réserviste et de nombreux ingénieurs pour concevoir la voiture et réaliser des stratégies pour les différentes courses.
 
-#### Fichier 
+#### Fichier Drivers.csv
+Le fichier Drivers.csv comprend l'ensemble des pilotes qui ont au moins participés à un grand prix de F1. Ce dataset contient aussi le nom, le prénom et la date de naissance de chacun des pilotes.
+
+#### 
 
 Ce dataset contient des informations sur l'ensemble des courses de Formule 1 depuis l'année 1950. Il y a plusieurs fichiers des datas sur les pilotes, les tracées des courses, sur les écuries, et l'emble des résultats pour les qualifications, course sprint et (vrai) course. 
 Le fichier le plus important est result.csv car il contient les résultats de chaque course avec le score de chaque pilote et le lieux. 
