@@ -87,19 +87,33 @@ Un championnat de Formule 1 est une série de courses automobiles qui se déroul
 
 Un Grand Prix de Formule 1 est une course qui fait partie de ce championnat. Les Grand Prix se déroulent sur des circuits de course spécialement conçus et sont généralement assez longs, avec des longueurs allant de 5 à 7 kilomètres. Avant chaque Grand Prix, il y a des séances d'essais libres et de qualifications pour permettre aux pilotes de se familiariser avec le circuit et de déterminer leur place de départ sur la grille. Les qualifications consistent en plusieurs tours rapides pour déterminer la position de départ des pilotes, avec les meilleurs temps qui obtiennent les positions les plus avancées sur la grille de départ. La course elle-même dure au maximum 2 heures, avec les pilotes qui effectuent un certain nombre de tours du circuit. Les pilotes s'arrêtent pour changer de pneus pendant la course, ce qui peut influencer leur stratégie et leur performance. Seul les dix premiers d'une course gagnent des points allant de 25 à 1 points pour le 10e.
 
-
+### Le Dataset
 https://www.kaggle.com/datasets/thedevastator/formula-one-racing-a-comprehensive-data-analysis
 
 Analyser et prédire le nombre de point d´un pilote à la fin d´une saison -> Régression linéaire multiple.
 
 Pour commencer, nous essayerons déja de déterminer le nombre de point que peut gagner un pilote pour un grand prix choisit.
 
+### Explication du contenu du dataset
+
+#### Fichier Circuit.csv
+Le fichier Circuit.csv contient l'ensemble des circuit de Formule 1 avec leurs noms, leurs pays et leurs positions géographiques.
+
+#### Fichier Constructor.csv
+Le fichier Constructor.csv contient l'ensemble des écuries de Formule 1 qui ont éxister. Ce fichier liste uniquement le nom des écuries et leurs nationalités. Une écurie de F1 est composé de deux pilotes principaux, de pilote réserviste et de nombreux ingénieurs pour concevoir la voiture et réaliser des stratégies pour les différentes courses.
+
+#### Fichier 
+
 Ce dataset contient des informations sur l'ensemble des courses de Formule 1 depuis l'année 1950. Il y a plusieurs fichiers des datas sur les pilotes, les tracées des courses, sur les écuries, et l'emble des résultats pour les qualifications, course sprint et (vrai) course. 
 Le fichier le plus important est result.csv car il contient les résultats de chaque course avec le score de chaque pilote et le lieux. 
 L'objectif est de trouvé un modèle qui permet de prédire le nombre de point d´un pilote à la fin d'une saison. Pour cela, nous devons trouver les variables qui ont le plus d'impact sur le nombre de point d´un pilote.
 Il s'agit d'un apprentissage supervisé car nous avons un jeu de données d'entraînement et un jeu de données à tester. Nous devons prédire un nombre de point d'un pilote à la fin d´une saison. Je pense qu'il faut utiliser une régression linéaire parce que nous devons déterminer une valeur numérique.
 
+### Choix du type d'algorithme
+
 https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
+
+![https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html](https://github.com/benjamin-milhet/F1_Machine_Learning/blob/main/cheat-sheet.png?raw=true)
 
 #### Partie 1 : Algorithmes de régression linéaire simple
 J'ai commencé par analyser mes données et sélectionner celle qui me semble importante pour commencer.
@@ -114,6 +128,4 @@ Les différentes variables qui me semble importante sont le circuit, l'écurie a
 #### Partie 3 : Chercher d'autre algorithme de regression
 J'avais entendu parler de la régression linéaire logistique, cepandant, après des premières recherches, elle ne semble pas correspondre à mon problème. En effet, celle ci est principalement utilisé pour une classification binaire. Notre problème est de déterminer le nombre de points gagner et cela n'est pas un choix entre deux solutions prédéfinis.
 
-#### 
-![https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html](https://github.com/benjamin-milhet/F1_Machine_Learning/blob/main/cheat-sheet.png?raw=true)
 
