@@ -1,0 +1,127 @@
+\documentclass[a4paper]{report}
+
+\pdfminorversion=5 
+\pdfcompresslevel=9
+\pdfobjcompresslevel=2
+
+%====================== PACKAGES ======================
+
+\usepackage[french]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{titlesec}
+\usepackage{pgfplots}
+% \usepackage{subcaption}
+%pour gérer les positionnement d'images
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{url}
+%pour les informations sur un document compilé en PDF et les liens externes / internes
+\usepackage{hyperref}
+%pour la mise en page des tableaux
+\usepackage{array}
+\usepackage{tabularx}
+%pour utiliser \floatbarrier
+%\usepackage{placeins}
+%\usepackage{floatrow}
+%espacement entre les lignes
+\usepackage{setspace}
+%modifier la mise en page de l'abstract
+\usepackage{abstract}
+%police et mise en page (marges) du document
+\usepackage[T1]{fontenc}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+%Pour les galerie d'images
+\usepackage{subfig}
+\usepackage[shortlabels]{enumitem}
+\usepackage[toc]{glossaries}
+\usepackage{caption}
+\usepackage{ragged2e}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{pgfplotstable}
+
+
+
+\def\nbR{\ensuremath{\mathrm{I\! R}}}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=sql,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+
+
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+\makeglossaries
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Huge}
+
+
+\begin{document}
+%régler l'espacement entre les lignes
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\renewcommand{\abstractname}{Résumé }
+\newcommand{\Csharp}{%
+  {\settoheight{\dimen0}{C}C\kern-.05em \resizebox{!}{\dimen0}{\raisebox{\depth}{\#}}}}
+
+
+%page de garde
+\input{./title.tex}
+
+%page blanche
+\newpage
+~
+%ne pas numéroter cette page
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\thispagestyle{empty}
+\setcounter{page}{0}
+\setcounter{page}{1}
+%ne pas numéroter le sommaire
+
+\newpage
+
+%espacement entre les lignes d'un tableau
+\renewcommand{\arraystretch}{1.5}
+
+%====================== INCLUSION DES PARTIES ======================
+
+%recommencer la numérotation des pages à "1"
+\setcounter{page}{1}
+
+\input{./Introduction.tex}
+\input{./Partie1.tex}
+\input{./Partie2.tex}
+\input{./Partie3.tex}
+\input{./Partie4.tex}
+\input{./Conclusion.tex}
+\input{./Annexe.tex}
+
+\end{document}
