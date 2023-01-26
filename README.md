@@ -129,17 +129,17 @@ Nous disposons de 11 colonnes pour 291 lignes d’informations pour le pilote Se
 
 #### Visualisation des données
 
-![](Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.005.png)
+![](images/Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.005.png)
 
 Figure 3.1 – Ensemble des points gagnés et le nombre de course disputée par S. VETTEL pour chacune de ses écuries
 
 Ce tableau nous indique que Sebastian VETTEL à disputer un grand nombre de course dans sa carrière et avec des écuries différentes. Cela est intéressant pour les prédictions parce que certaines écuries n’ont pas les mêmes moyens et stratégies ce qui influe sur le résultat final.
 
-![](Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.006.png)
+![](images/Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.006.png)
 
 Figure 3.2 – Nombre de points gagnés par Sebastian VETTEL en fonction d’une course
 
-![](Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.007.png)
+![](images/Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.007.png)
 
 Figure 3.3 – Nombre de points gagnés par Sebastian VETTEL en fonction de sa position de départ Ces représentations m’ont permis de prendre en main le Dataset ainsi que de comprendre le jeu de données.
 
@@ -151,7 +151,7 @@ Ce dataset contient des informations sur l’ensemble des courses de Formule 1 d
 
 J’ai commencé par analyser mes données et sélectionner celle qui me semble importante pour commencer. En premiers lieux j’ai commencé par une régression linéaire simple pour prendre en main les différentes biblio- thèques. J’ai pris comme paramètre le nombre de points d’un pilote par rapport à ses différentes courses. Les résultats ne sont pas très concluants pour plusieurs raisons. La première est que la courbe de prédiction et suit une loi y = ax + b. La seconde raison est que le nombre de points gagnés par un pilote sur une course ne dépend pas uniquement de sa position de départ, mais de beaucoup plus de facteur cité dans le chapitre consacré au Dataset.
 
-![](Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.008.png)
+![](images/Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.008.png)
 
 Figure 4.1 – Régression linéaire simple du nombre de point gagner par rapport à sa position de départ du pilote S. Vettel
 
@@ -163,7 +163,7 @@ Durant mes recherches, j’ai découvert la régression logistique, cependant, a
 
 [Cheat-Sheet de Sckit-Learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
 
-![](Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.009.png)
+![](images/Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.009.png)
 
 Figure 4.2 – Chemin choisit pour mon projet sur la Cheat-Sheet
 
@@ -173,7 +173,7 @@ Figure 4.2 – Chemin choisit pour mon projet sur la Cheat-Sheet
 
 Le premier algorithme de régression prenant plusieurs paramètres en entrée que je vais étudier est un algorithme de régression LASSO pour Least Absolute Shrinkage and Selection Operator et qui me permet de choisir les paramètres les plus importants dans l’ensemble de mes fichiers. En effet, pour prédire le nombre de points qu’un pilote de Formule 1 peut gagner, cet algorithme permet de sélectionner automatiquement les variables les plus importantes pour la prédiction. Dans le cas de la Formule 1, il y a souvent beaucoup de variables qui peuvent influencer les performances d’un pilote, telles que l’âge, l’expérience, la vitesse moyenne, les positions de départ en pole position, et l’ensemble des points déjà gagner par grand-prix. Le fait d’utiliser une régression Lasso pour sélectionner les paramètres les plus intéressants pourrait améliorer la précision des prédictions et éviter le sur-apprentissage.
 
-![](Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.010.png)
+![](images/Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.010.png)
 
 Figure 4.3 – Régression LASSO sur les données du pilote S. VETTEL
 
