@@ -1,124 +1,66 @@
-![](Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.001.png)
+Projet 4A - Prédiction de score en Formule 1
 
-Université de Bourgogne![](Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.002.png)
+ - Auteur : M. Benjamin MILHET
+ - Professeur : Mme. Manon ANSART
 
-Projet 4A - Prédiction de score en Formule 1![](Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.003.png)
 
-Auteur : Professeur : Benjamin MILHET Mme. ANSART
-
-![](Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.004.jpeg)
-
-<benjamin_milhet@etu.u-bourgogne.fr>
-
-Table des matières
-
-[1 Introduction](#_page4_x56.69_y56.69) 1
-
-[2 Découverte du machine learning](#_page5_x56.69_y56.69) 2
-
-1. [Quelle est la différence entre apprentissage supervisé et non-supervisé? . . .](#_page5_x56.69_y207.13) . . . . . . . . . . . . 2
-1. [Quelle est la différence entre classification et régression? Est-ce de l’apprentissage supervisé ou non-supervisé? ](#_page5_x56.69_y350.40). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
-1. [Qu’est-ce que du clustering? Quelle est la différence avec la classification? . . ](#_page5_x56.69_y460.24). . . . . . . . . . . 2
-1. [Sur kaggle ou driven-data, choisissez 5 exemples de compétitions et dites quel est le type de problème (classification, régression, clustering ou autre) . ](#_page6_x56.69_y56.69). . . . . . . . . . . . . . . . . . . . . . 3
-1. [Compétition 1 ](#_page6_x56.69_y144.09). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-1. [Compétition 2 ](#_page6_x56.69_y238.19). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-1. [Compétition 3 ](#_page6_x56.69_y332.29). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-1. [Compétition 4 ](#_page6_x56.69_y426.39). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-1. [Compétition 5 ](#_page6_x56.69_y520.49). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-5. [Quel type de problème de machine learning vous semble le plus répandu? . . ](#_page6_x56.69_y627.61). . . . . . . . . . . 3
-
-[3 Choix du sujet](#_page7_x56.69_y56.69) 4
-
-1. [Découverte de Kaggle ](#_page7_x56.69_y207.13). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-1. [Pourquoi ce domaine? .](#_page7_x56.69_y320.51) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-1. [Explication de la Formule 1 .](#_page7_x56.69_y434.40) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-1. [Le Dataset ](#_page8_x56.69_y56.69). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1. [Explication du contenu du dataset . ](#_page8_x56.69_y118.25). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1. [Fichier Circuits.csv ](#_page8_x56.69_y142.81). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1. [Fichier Constructors.csv . ](#_page8_x56.69_y198.40). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1. [Fichier Drivers.csv .](#_page8_x56.69_y276.61) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1. [Fichier Lap_times.csv . ](#_page8_x56.69_y334.79). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1. [Fichier Pit_stops.csv .](#_page8_x56.69_y402.99) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1. [Fichier Qualifying.csv .](#_page8_x56.69_y471.18) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1. [Fichier Results.csv .](#_page8_x56.69_y563.29) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1. [Fichier Races.csv .](#_page8_x56.69_y641.50) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1. [Fichier Constructor_standings.csv . . ](#_page8_x56.69_y697.74). . . . . . . . . . . . . . . . . . . . . . . . 5
-2. [Visualisation des données ](#_page9_x56.69_y224.06). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
-
-[4 Choix du type d’algorithme](#_page11_x56.69_y56.69) 8
-
-1. [Algorithme](#_page11_x56.69_y373.46) [1](#_page11_x56.69_y373.46) [:](#_page11_x56.69_y373.46) [Algorithme](#_page11_x56.69_y373.46) [de](#_page11_x56.69_y373.46) [régression](#_page11_x56.69_y373.46) [linéaire](#_page11_x56.69_y373.46) [simple](#_page11_x56.69_y373.46) [.](#_page11_x56.69_y373.46) [.](#_page11_x56.69_y373.46) . . . . . . . . . . . . . . . . . . . . . . 8
-2. [Algorithme](#_page11_x56.69_y689.22) [2](#_page11_x56.69_y689.22) [:](#_page11_x56.69_y689.22) [Algorithmes](#_page11_x56.69_y689.22) [de](#_page11_x56.69_y689.22) [régression](#_page11_x56.69_y689.22) [logistique](#_page11_x56.69_y689.22) [.](#_page11_x56.69_y689.22) . . . . . . . . . . . . . . . . . . . . . . . . . 8
-2. [Choix d’un meilleur algorithme .](#_page12_x56.69_y56.69) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
-2. [Algorithme de régression LASSO .](#_page12_x56.69_y600.01) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
-
-[5 Difficultés rencontrées](#_page14_x56.69_y56.69) 11 [6 Points à améliorer](#_page15_x56.69_y56.69) 12 [7 Conclusion](#_page16_x56.69_y56.69) 13 [8 Annexe](#_page17_x56.69_y56.69) 14
-
-[9 Bibliographie](#_page18_x56.69_y56.69) 15
-
-1. [Sites Internet ](#_page18_x56.69_y207.13). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
-1. [Livre ](#_page18_x56.69_y378.35). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
-1. [Vidéos ](#_page18_x56.69_y438.35). . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
-
-2
-
-Introduction
+## Introduction
 
 L’objectif de ce projet de 4e année est d’approfondir le machine learning introduit lors de ma formation à l’ESIREM et de pouvoir découvrir de nouveaux aspects d’un domaine très large et en pleine expansion. Dans ce projet, nous allons faire des recherches sur les différents types d’apprentissages et leurs algorithmes, puis nous allons choisir un dataset sur le site Kaggle permettant de réaliser le projet et nous allons déterminer son type d’apprentissage et tester différents algorithmes de machine learning adapter a ce sujet.
 
 Dans ce projet, nous allons explorer différents algorithmes de Machine Learning pour prédire le nombre de points qu’un pilote de Formule 1 peut gagner lors d’un Grand-Prix. Nous allons utiliser des données de Formule 1 depuis 1950 pour entraîner nos modèles de prédiction. Nous allons utiliser différents algorithmes d’apprentissage automatique pour traiter les données, tels que la régression linéaire, la régression Lasso et la régression Ridge. Nous allons également utiliser des techniques de visualisation pour mieux comprendre les données et les résultats des modèles. Ce projet est une introduction pour découvrir les différents types d’apprentissage de Machine Learning avec un sujet que j’apprécie qui est la Formule 1.
 
-Découverte du machine learning
+## Découverte du machine learning
 
-1. Quelle est la différence entre apprentissage supervisé et non- supervisé?
+### Quelle est la différence entre apprentissage supervisé et non- supervisé?
 
 Un apprentissage supervisé possède des données en entrée et en sortie. Ce type d’apprentissage possède un training set, un ensemble de données qui permet d’entraîner notre algorithme avec des données en entre à tester et les différentes solutions associées. Cela lui permet d’avoir une base pour ensuite étudier de nouveaux individus et d’avoir une idée de quel type de solution l’algorithme doit chercher.
 
 Pour l’apprentissage non supervisé, il n’y a pas de données en sortie mais juste en entrée. C’est à l’algorithme de déduire les points importants et de proposer ses solutions sans avoir été entraîné auparavant.
 
-2. Quelle est la différence entre classification et régression? Est-ce de l’apprentissage supervisé ou non-supervisé?
+### Quelle est la différence entre classification et régression? Est-ce de l’apprentissage supervisé ou non-supervisé?
 
 La classification et la régression sont 2 types d’algorithmes utilisant un apprentissage supervisé. On utilise la classification lorsque les solutions souhaitées sont des catégories comme des pommes ou des oranges. Alors que la régression est utilisée pour des valeurs numériques comme pour prédire le chiffre d’affaires d’une entreprise. La régression essaye de comprendre les relations entre les différentes variables.
 
-3. Qu’est-ce que du clustering? Quelle est la différence avec la clas- sification?
+### Qu’est-ce que du clustering? Quelle est la différence avec la clas- sification?
 
 La principale différence entre la classification et le clustering est que la classification utilise un apprentissage supervisé alors que le clustering suit un apprentissage non supervisé. Le clustering se base sur les similitudes des paires en entrée, et sur son expérience au fur et à mesure de tester différentes entrées. Le temps d’exécution peut être très élevé si le nombre d’exemples en entrée est très élevé (plusieurs millions)
 
-4. Sur kaggle ou driven-data, choisissez 5 exemples de compétitions et dites quel est le type de problème (classification, régression, clustering ou autre)
+### Sur kaggle ou driven-data, choisissez 5 exemples de compétitions et dites quel est le type de problème (classification, régression, clustering ou autre)
 
 [Liste des compétitions sur Kaggle](https://www.kaggle.com/competitions)
 
-1. Compétition 1
+#### Compétition 1
 
 [Compétition 1 sur la prédiction du prix d’une maison](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data)
 
 On remarque que le jeu de donnée possède un jeu de données d’entraînement et un jeu de données à tester. On est donc sur un apprentissage supervisé. Il faut trouver une valeur numérique pour prédire le prix de vente. Je pense qu’il faut utiliser une régression.
 
-2. Compétition 2
+#### Compétition 2
 
 [Compétition 2 sur la prédiction de quel passager seront transportés dans une autre dimension](https://www.kaggle.com/competitions/spaceship-titanic/overview)
 
 On remarque que le jeu de donnée possède un jeu de données d’entraînement et un jeu de données à tester. On est donc sur un apprentissage supervisé. Il faut prédire si le passager va voyager dans une autre dimension ou non. Je pense qu’il faut utiliser une classification parce que c’est un choix binaire.
 
-3. Compétition 3
+#### Compétition 3
 
 [Compétition 3 sur la prédiction des survivants du Titanic](https://www.kaggle.com/competitions/titanic/overview)
 
 On remarque que le jeu de données possède un jeu de données d’entraînement et un jeu de données à tester. On est donc sur un apprentissage supervisé. Il faut prédire si le passager du Titanic va mourir ou non. Je pense qu’il faut utiliser une classification parce que c’est un choix binaire.
 
-4. Compétition 4
+#### Compétition 4
 
 [Compétition 4 sur la prédiction de si le contenu d’un tweet est réel ou non](https://www.kaggle.com/competitions/nlp-getting-started)
 
 On remarque que le jeu de donnée possède un jeu de données d’entraînement et un jeu de données à tester. On est donc sur un apprentissage supervisé. Il faut prédire si l’information dans le tweet est vraie ou non. Je pense qu’il faut utiliser une classification parce que c’est un choix binaire.
 
-5. Compétition 5
+#### Compétition 5
 
 [Compétition 5 sur la prédiction de quel personne vont recevoir leusr doses de vaccin](https://www.drivendata.org/competitions/66/flu-shot-learning/page/211/)
 
 On remarque que le jeu de donnée possède un jeu de données d’entraînement et un jeu de données à tester. On est donc sur un apprentissage supervisé. Il faut prédire si n individu va se faire vacciner pour h1n1 ou/et pour la grippe saisonnière ou non. Je pense qu’il faut utiliser une classification parce que c’est un choix binaire, il faut classer les personnes en fonction de quel vaccin ils vont choisir ou non.
 
-5. Quel type de problème de machine learning vous semble le plus répandu?
+#### Quel type de problème de machine learning vous semble le plus répandu?
 
 Je remarque déjà que le type d’apprentissage le plus utilisé est l’apprentissage supervisé. On en déduit donc 2 types de problèmes qui sont le plus répandus et qui sont la classification et la régression. D’après les exemples précédents, j’ai l’impression que le problème de machine learning le plus répandu est la classification.
 
