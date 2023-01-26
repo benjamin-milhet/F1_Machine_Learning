@@ -216,4 +216,3 @@ L’ensemble de ce projet m’a permis d’approfondir mes connaissances en Mach
 3. Vidéos
 - [Tout savoir sur la régression pénalisée (Ridge/Lasso/ElasticNet) - LES MODELES LINEAIRES #9](https://www.youtube.com/watch?v=YfAgP-xKi30&list=LL&index=2)
 - [Coder régression linéaire Simple - Exemple Pratique - Machine Learning / Apprentissage automatique](https://www.youtube.com/watch?v=WLmOFlSxYTY&list=LL&index=25)
-15
