@@ -3,6 +3,7 @@
  - Auteur : M. Benjamin MILHET
  - Professeur : Mme. Manon ANSART
 
+![](images/Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.001.png)
 
 ## Introduction
 
