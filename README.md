@@ -1,4 +1,4 @@
-Projet 4A - Prédiction de score en Formule 1
+# Projet 4A - Machine Learning et Formule 1
 
  - Auteur : M. Benjamin MILHET
  - Professeur : Mme. Manon ANSART
