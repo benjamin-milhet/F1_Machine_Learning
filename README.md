@@ -5,6 +5,8 @@
 
 ![](images/Aspose.Words.17949f08-ea64-4be6-9763-7919d2bb09d6.001.png)
 
+https://www.kaggle.com/code/benjaminmilhet/f1-regression-points
+
 ## Introduction
 
 L’objectif de ce projet de 4e année est d’approfondir le machine learning introduit lors de ma formation à l’ESIREM et de pouvoir découvrir de nouveaux aspects d’un domaine très large et en pleine expansion. Dans ce projet, nous allons faire des recherches sur les différents types d’apprentissages et leurs algorithmes, puis nous allons choisir un dataset sur le site Kaggle permettant de réaliser le projet et nous allons déterminer son type d’apprentissage et tester différents algorithmes de machine learning adapter a ce sujet.
